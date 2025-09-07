@@ -169,26 +169,29 @@ body {
 
 .btn {
     display: inline-block;
-    padding: 12px 30px;
-    border-radius: 50px;
+    padding: 15px 35px;
+    border-radius: 12px;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     transition: all 0.3s ease;
     border: 2px solid transparent;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
 }
 
 .btn-primary {
-    background: #2563eb;
+    background: linear-gradient(135deg, #2563eb, #4A90E2);
     color: white;
     border-color: #2563eb;
 }
 
 .btn-primary:hover {
-    background: #1d4ed8;
-    transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+    background: linear-gradient(135deg, #1d4ed8, #3b82f6);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
 }
 
 .btn-secondary {
@@ -387,67 +390,105 @@ body {
 
 /* Botões de WhatsApp e Instagram */
 .btn-whatsapp {
-    background: #25d366;
+    background: linear-gradient(135deg, #25d366, #128c7e);
     color: white;
     border-color: #25d366;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
 }
 
 .btn-whatsapp:hover {
-    background: #128c7e;
-    transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
+    background: linear-gradient(135deg, #128c7e, #0d6b5f);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
 }
 
 .btn-instagram {
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     color: white;
     border: none;
+    box-shadow: 0 4px 15px rgba(225, 48, 108, 0.3);
 }
 
 .btn-instagram:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(225, 48, 108, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(225, 48, 108, 0.4);
 }
 
 .btn-whatsapp-small {
-    background: #25d366;
+    background: linear-gradient(135deg, #25d366, #128c7e);
     color: white;
-    padding: 8px 16px;
-    font-size: 0.9rem;
+    padding: 10px 20px;
+    font-size: 1rem;
     margin-top: 0.5rem;
     display: inline-block;
+    border-radius: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    box-shadow: 0 3px 10px rgba(37, 211, 102, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-whatsapp-small:hover {
+    background: linear-gradient(135deg, #128c7e, #0d6b5f);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
 }
 
 .btn-instagram-small {
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     color: white;
-    padding: 8px 16px;
-    font-size: 0.9rem;
+    padding: 10px 20px;
+    font-size: 1rem;
     margin-top: 0.5rem;
     display: inline-block;
     border: none;
+    border-radius: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    box-shadow: 0 3px 10px rgba(225, 48, 108, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-instagram-small:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(225, 48, 108, 0.4);
 }
 
 .btn-facebook {
-    background: #1877f2;
+    background: linear-gradient(135deg, #1877f2, #42a5f5);
     color: white;
     border-color: #1877f2;
+    box-shadow: 0 4px 15px rgba(24, 119, 242, 0.3);
 }
 
 .btn-facebook:hover {
-    background: #166fe5;
-    transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(24, 119, 242, 0.3);
+    background: linear-gradient(135deg, #166fe5, #1976d2);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(24, 119, 242, 0.4);
 }
 
 .btn-facebook-small {
-    background: #1877f2;
+    background: linear-gradient(135deg, #1877f2, #42a5f5);
     color: white;
-    padding: 8px 16px;
-    font-size: 0.9rem;
+    padding: 10px 20px;
+    font-size: 1rem;
     margin-top: 0.5rem;
     display: inline-block;
     border: none;
+    border-radius: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    box-shadow: 0 3px 10px rgba(24, 119, 242, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-facebook-small:hover {
+    background: linear-gradient(135deg, #166fe5, #1976d2);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(24, 119, 242, 0.4);
 }
 
 .btn-large {
@@ -582,96 +623,284 @@ body {
 
 /* Parceiros Section */
 .parceiros {
-    padding: 80px 0;
-    background: white;
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    position: relative;
+    overflow: hidden;
 }
 
+.parceiros::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="%23e2e8f0" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    pointer-events: none;
+}
+
+
 .parceiros-content {
-    max-width: 800px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
 }
 
 .parceiro-card {
-    background: #f8fafc;
+    background: white;
     border-radius: 20px;
-    padding: 3rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    gap: 3rem;
+    padding: 40px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    text-align: center;
     transition: all 0.3s ease;
-    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #f1f5f9;
+    max-width: 600px;
+    width: 100%;
+}
+
+.parceiro-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(135deg, #2563eb, #4A90E2);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.parceiro-card:hover::before {
+    transform: scaleX(1);
 }
 
 .parceiro-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-    border-color: #2563eb;
+}
+
+.parceiro-card.featured {
+    border: 2px solid #2563eb;
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+}
+
+.parceiro-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #2563eb, #4A90E2);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .parceiro-logo {
-    flex-shrink: 0;
+    margin-bottom: 25px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo-parceiro {
-    height: 120px;
-    width: auto;
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
-    transition: all 0.3s ease;
+    max-width: 150px;
+    max-height: 80px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: contain;
 }
 
-.parceiro-card:hover .logo-parceiro {
-    transform: scale(1.05);
-    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.2));
+.logo-placeholder {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border: 2px solid #e2e8f0;
 }
 
-.parceiro-info {
-    flex: 1;
-}
-
-.parceiro-nome {
+.logo-placeholder i {
     font-size: 2rem;
+    color: #64748b;
+}
+
+.parceiro-info h3 {
+    color: #1e293b;
+    font-size: 1.5rem;
     font-weight: 700;
-    color: #1f2937;
-    margin-bottom: 1rem;
+    margin-bottom: 15px;
 }
 
 .parceiro-descricao {
-    font-size: 1.1rem;
-    color: #6b7280;
+    color: #64748b;
+    font-size: 1rem;
     line-height: 1.6;
-    margin-bottom: 1.5rem;
+    margin-bottom: 20px;
+    min-height: 60px;
 }
 
 .parceiro-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 2rem;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .tag {
-    background: linear-gradient(135deg, #103460, #2563eb);
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
+    background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+    color: #475569;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid #e2e8f0;
+}
+
+.parceiro-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.stars {
+    display: flex;
+    gap: 2px;
+}
+
+.stars i {
+    color: #fbbf24;
     font-size: 0.9rem;
+}
+
+.rating-text {
+    font-size: 0.9rem;
+    color: #64748b;
     font-weight: 500;
 }
 
 .btn-parceiro {
-    background: #2563eb;
+    background: linear-gradient(135deg, #2563eb, #4A90E2);
     color: white;
-    border-color: #2563eb;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 8px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    width: 100%;
+    justify-content: center;
 }
 
 .btn-parceiro:hover {
-    background: #1d4ed8;
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
+}
+
+.btn-parceiro.disabled {
+    background: #e2e8f0;
+    color: #94a3b8;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.btn-parceiro.disabled:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.parceiros-cta {
+    text-align: center;
+    margin-top: 80px;
+    padding: 60px 40px;
+    background: linear-gradient(135deg, #2563eb, #4A90E2);
+    border-radius: 25px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.parceiros-cta::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>');
+    animation: float 20s infinite linear;
+    pointer-events: none;
+}
+
+@keyframes float {
+    0% { transform: translateX(-50px) translateY(-50px); }
+    100% { transform: translateX(50px) translateY(50px); }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.parceiros-cta h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.parceiros-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+    position: relative;
+    z-index: 1;
+}
+
+.parceiros-cta .btn-primary {
+    background: white;
+    color: #2563eb;
+    padding: 15px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.parceiros-cta .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 /* Sobre Section */
@@ -898,6 +1127,60 @@ body {
 }
 
 /* Responsive Design */
+/* Parceiros Mobile Responsive */
+@media (max-width: 768px) {
+    .parceiro-card {
+        padding: 25px;
+    }
+    
+    .parceiro-badge {
+        top: 15px;
+        right: 15px;
+        padding: 4px 12px;
+        font-size: 0.7rem;
+    }
+    
+    .parceiros-cta {
+        padding: 40px 20px;
+        margin-top: 60px;
+    }
+    
+    .parceiros-cta h3 {
+        font-size: 2rem;
+    }
+    
+    .parceiros-cta p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .parceiro-card {
+        padding: 20px;
+    }
+    
+    .parceiro-info h3 {
+        font-size: 1.3rem;
+    }
+    
+    .parceiro-descricao {
+        font-size: 0.95rem;
+        min-height: 50px;
+    }
+    
+    .parceiros-cta {
+        padding: 30px 15px;
+    }
+    
+    .parceiros-cta h3 {
+        font-size: 1.8rem;
+    }
+    
+    .parceiros-cta p {
+        font-size: 1rem;
+    }
+}
+
 @media (max-width: 768px) {
     .nav-container {
         height: 60px;

@@ -271,3 +271,5 @@ const statsSection = document.querySelector('.sobre-stats');
 if (statsSection) {
     statsObserver.observe(statsSection);
 }
+
+// Parceiros section - simplified (no filtering needed)
