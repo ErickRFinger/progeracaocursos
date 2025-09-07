@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagens - PROGERAÇÃO</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f8fafc;
+        }
+        .test-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .image-test {
+            margin: 20px 0;
+            padding: 20px;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+        }
+        .image-test h3 {
+            color: #374151;
+            margin-bottom: 10px;
+        }
+        .image-test img {
+            max-width: 200px;
+            height: auto;
+            border: 1px solid #d1d5db;
+            border-radius: 4px;
+        }
+        .status {
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        .success {
+            background: #d1fae5;
+            color: #065f46;
+            border: 1px solid #a7f3d0;
+        }
+        .error {
+            background: #fee2e2;
+            color: #991b1b;
+            border: 1px solid #fca5a5;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>🔍 Teste de Imagens - PROGERAÇÃO</h1>
+        <p>Verificando se as imagens estão carregando corretamente...</p>
+        
+        <div class="image-test">
+            <h3>1. Logo PROGERAÇÃO (Header)</h3>
+            <img src="./LOGOS/logoprogeracao.png" alt="PROGERAÇÃO" class="logo" 
+                 onload="showStatus(this, 'success')" 
+                 onerror="showStatus(this, 'error')">
+            <div id="status1"></div>
+        </div>
+        
+        <div class="image-test">
+            <h3>2. Logo PROGERAÇÃO (Hero)</h3>
+            <img src="./LOGOS/logoprogeracao.png" alt="PROGERAÇÃO" class="logo-hero" 
+                 onload="showStatus(this, 'success')" 
+                 onerror="showStatus(this, 'error')">
+            <div id="status2"></div>
+        </div>
+        
+        <div class="image-test">
+            <h3>3. Logo VISUALTECH</h3>
+            <img src="./LOGOS/LOGO VISUAL PRETA.png" alt="VISUALTECH" class="logo-parceiro" 
+                 onload="showStatus(this, 'success')" 
+                 onerror="showStatus(this, 'error')">
+            <div id="status3"></div>
+        </div>
+        
+        <div class="image-test">
+            <h3>4. Logo PROGERAÇÃO (Footer)</h3>
+            <img src="./LOGOS/logoprogeracao.png" alt="PROGERAÇÃO" class="logo" 
+                 onload="showStatus(this, 'success')" 
+                 onerror="showStatus(this, 'error')">
+            <div id="status4"></div>
+        </div>
+        
+        <div class="image-test">
+            <h3>5. Favicon</h3>
+            <img src="./LOGOS/logoprogeracao.png" alt="Favicon" style="width: 32px; height: 32px;" 
+                 onload="showStatus(this, 'success')" 
+                 onerror="showStatus(this, 'error')">
+            <div id="status5"></div>
+        </div>
+        
+        <div style="margin-top: 30px; padding: 20px; background: #f3f4f6; border-radius: 8px;">
+            <h3>📋 Instruções para Deploy</h3>
+            <p><strong>Se todas as imagens carregaram:</strong> ✅ Site pronto para deploy!</p>
+            <p><strong>Se alguma imagem não carregou:</strong> ❌ Verifique os caminhos e faça o deploy novamente.</p>
+        </div>
+    </div>
+    
+    <script>
+        function showStatus(img, type) {
+            const statusId = 'status' + img.parentElement.querySelector('h3').textContent.split('.')[0];
+            const statusDiv = document.getElementById(statusId);
+            
+            if (type === 'success') {
+                statusDiv.innerHTML = '<div class="status success">✅ Imagem carregada com sucesso!</div>';
+            } else {
+                statusDiv.innerHTML = '<div class="status error">❌ Erro ao carregar imagem!</div>';
+            }
+        }
+        
+        // Verificar se todas as imagens carregaram
+        window.addEventListener('load', function() {
+            const images = document.querySelectorAll('img');
+            let loadedCount = 0;
+            let totalCount = images.length;
+            
+            images.forEach(img => {
+                if (img.complete && img.naturalHeight !== 0) {
+                    loadedCount++;
+                }
+            });
+            
+            console.log(`Imagens carregadas: ${loadedCount}/${totalCount}`);
+        });
+    </script>
+</body>
+</html>
