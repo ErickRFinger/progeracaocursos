@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: site-progeracao
+    env: static
+    buildCommand: npm install
+    startCommand: npm start
+    plan: free
+    region: oregon
+    staticPublishPath: .
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
